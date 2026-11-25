@@ -1,6 +1,6 @@
 import click
 
-from controller import auth, account, category, transaction, investment, snapshot, investment_transaction, goal, contribution, report
+from controller import auth, account, category, transaction, investment, snapshot, investment_transaction, goal, contribution, report, vehicle
 
 @click.group()
 def main():
@@ -9,6 +9,7 @@ def main():
 main.add_command(auth)
 main.add_command(goal)
 main.add_command(report)
+main.add_command(vehicle)
 main.add_command(account)
 main.add_command(category)
 main.add_command(snapshot)
